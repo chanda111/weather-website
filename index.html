@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <!-- general div -->
+    <div class="wrapper">
+        <!-- div with card using bootstrap -->
+        <div class="card text-center">
+            <!-- where to input city name -->
+            <input type="text" id="city" placeholder="Enter City ...">
+            <!-- submit button, on click you get weather details -->
+            <button class="btn btn-danger" id="submit">Submit</button>
+
+            <p id="para"></p>
+
+     
+        <!-- on clicking here the app selects your location automatically and gives you weather details -->
+      
+            <button class="btn btn-primary" id="butt">Get location</button>
+        </div>
+        <br><br>
+        <!-- form where data details will be displayed -->
+        <form>
+            <div class="row">
+
+                <div class="col-sm">
+                    <div class="card" id="cards">
+                        <div class="card-body">
+                            <!-- will show the city  -->
+                            <p class="card-text" id="country">City Name</p>
+                            <!-- shows the icon that matches weather at that moment -->
+                            <p><img src="#" id="icon" alt="weather icon">
+                            </p>
+                            <!-- gives a description of weather -->
+                            <p class="card-text" id="description">Description</p>
+                            <div>
+                                <span class="card-text" id="temp" style="padding-bottom: 6rem;">Temperature: 36
+
+                                </span>
+                                <span>°C</span>
+
+                            </div><br>
+                            <div class="col-sm-4">
+                                <!-- shows feels like section -->
+                                <p class="card-text" id="feels_like">Feels like</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <!-- shows humidity section -->
+                                <p class="card-text" id="humidity">Humidity</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <!-- shows humidity section -->
+                                <span class="card-text" id="windSpeed">Wind Speed: </span> <span>m/s</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
